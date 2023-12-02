@@ -1,2 +1,9 @@
 # Blogging_App_Spring_Boot
-This repository houses the backend application for SpringMart, an ecommerce platform, featuring a suite of 37 APIs for performing CRUD operations on customer, seller, product, cart, card, and order entities. The application is hosted on AWS, utilizing a cloud database for seamless scalability and performance.
+This is a Blogs management backend application using spring boot, featuring different kind of APIs to perform CRUD operations on different entities like User, Post, Category, Comment, Role etc.
+MySQL is used for database feasibility. For proper documentation purpose swagger is used and spring security implemented on all APIs with proper authentication and authorization.
+
+# Tech - stack
+## Programming Language: Java
+## Framework: Spring Boot 3
+## Database management: MySQL
+## Version control: Git
