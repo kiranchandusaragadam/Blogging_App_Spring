@@ -18,16 +18,17 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 @EnableWebSecurity
+@EnableMethodSecurity
 public class SecurityConfig{
     // authentication
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder encoder){
-        UserDetails admin = User.withUsername("kiran")
-                .password(encoder.encode("1234"))
+        UserDetails admin = User.withUsername("admin")
+                .password(encoder.encode("admin"))
                 .roles("ADMIN")
                 .build();
         UserDetails user = User.withUsername("user")
-                .password(encoder.encode("1351"))
+                .password(encoder.encode("user"))
                 .roles("USER")
                 .build();
         return new InMemoryUserDetailsManager(admin, user);
